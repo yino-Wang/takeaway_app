@@ -1,0 +1,27 @@
+.goods-count {
+  font-size: 16px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+
+  .minus,
+  .plus {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    position: relative;
+  }
+  .minus {
+    margin-right: 12.5px;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/9055/9055206.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .plus {
+    margin-left: 25px;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/4315/4315609.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
