@@ -44,7 +44,7 @@ const createStore = createSlice({
         }
         item.count--
       },
-      // 清除购物车
+      // 清除购物车 state表当前状态
       clearCart (state) {
         state.cartList = []
       }

@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import Count from '../Count'
 import './index.scss'
 import { useDispatch, useSelector } from 'react-redux'
-import { decreCount, increCount } from '../../store/modules/takeaway'
+import { clearCart, decreCount, increCount } from '../../store/modules/takeaway'
 import { useState } from 'react'
 
 
@@ -52,7 +52,11 @@ const Cart = () => {
       <div className={classNames('cartPanel', visible && 'visible')}>
         <div className="header">
           <span className="text">购物车</span>
-          <span className="clearCart">
+          <span className="clearCart" onClick={() => {
+              if (window.confirm('确定要清空购物车吗？')) {
+                dispatch(clearCart());
+              }
+            }}>
             清空购物车
           </span>
         </div>
