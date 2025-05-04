@@ -36,6 +36,7 @@ npm install
 npm run start
 ```
 ## 📁 Project Structure
+```plaintext
 src/
 ├── assets/             # Static files (images, logos, etc.)
 ├── components/         # Reusable UI components (e.g. Cart, Header)
@@ -45,6 +46,7 @@ src/
 ├── main.jsx            # Entry point
 └── index.scss          # Global styles
 
+```
 ---
 
 ## ✅ TODO / Future Enhancements
